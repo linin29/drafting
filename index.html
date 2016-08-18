@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>拖拽效果</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<body>
+	<div class="link">
+		<a href="javascript:index.showDialog();">登录</a>
+	</div>
+	<div class="mask" id="mask" onselectstart="return false;"></div>
+	<div class="dialog" id="dialog" onselectstart="return false;">
+		<div class="dialog-title" id="dialogTitle" onselectstart="return false;">
+			拖拽登录<a href="javascript:index.hideDialog();" class="dialog-closebutton"></a>
+		</div>
+		<div class="dialog-content">
+			<div class="dialog-l40 dialog-pt15">
+			<input class="dialog-input dialog-input-username" type="input" value="手机/邮箱/用户名" />
+		</div>
+		<div class="dialog-l40 dialog-pt15">
+			<input class="dialog-input dialog-input-password" type="input" value="密码" />
+		</div>
+		<div class="dialog-l40">
+			<a href="#">忘记密码</a>
+		</div>
+		<div>
+			<a class="dialog-submit" href="#" >登录</a>
+		</div>
+		<div class="dialog-l40">
+			<a href="#">立即注册</a>
+		</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+	    index.Dialog("dialogTitle", "dialog");
+	    //index.showDialog();
+	    //console.log(index);
+    </script>
+</html>
